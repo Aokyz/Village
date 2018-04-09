@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>乡居</title>
+    <link rel="stylesheet" href="static/css/nav.css">
+    <link rel="stylesheet" href="static/css/necessary.css">
+    <link rel="stylesheet" href="static/css/mask1.css" media="screen" title="no title">
+    <link rel="stylesheet" href="static/css/live.css" media="screen" title="no title">
+
+    <link rel="stylesheet" href="static/css/foot.css" media="screen" title="no title">
+    <style>
+      footer.foot-footer{
+        background: rgba(97, 144, 148, 0.23);
+        margin-top: 100px;
+      }
+      body{
+          background: url(static/images/bbbg.jpg) center bottom fixed;
+      }
+
+    </style>
+  </head>
+
+  <body>
+
+      <header class="nav-header">
+          <div class="nav-bao">
+              <nav class="nav-nav">
+                      <a href="#" class="nav-logo">
+                              <img src="static/images/logo.png" alt="" class="nav-logo-img">
+                      </a>
+                      <div class="nav-div">
+                              <!-- <img src="static/images/menu.png" alt="" class="nav-div-img"> -->
+                              <div class="nav-div-img">
+                                      <span class="nav-div-img-b1">1</span>
+                                      <span class="nav-div-img-b2">1</span>
+                                      <span class="nav-div-img-b3">1</span>
+                              </div>
+                              <ul class="nav-ul">
+                                      <li class="nav-li">
+                                              <a href="index.html" class="nav-lia">首页</a>
+                                      </li>
+                                      <li class="nav-li">
+                                              <a href="scenery1.html" class="nav-lia">景点</a>
+                                      </li>
+                                      <li class="nav-li">
+                                              <a href="activity.html" class="nav-lia">体验</a>
+                                      </li>
+                                      <li class="nav-li nav-active">
+                                              <a href="live.html" class="nav-lia nav-lia-active">乡居</a>
+                                      </li>
+                                      <li class="nav-li">
+                                              <a href="story.html" class="nav-lia">故事</a>
+                                      </li>
+                                      <li class="nav-li">
+                                              <a href="login.html" class="nav-lia">登录/注册</a>
+                                      </li>
+                              </ul>
+                      </div>
+              </nav>
+          </div>
+
+      </header>
+<div class="wrappp">
+    <div class="allcont ">
+            <div class="contfirst clearfix">
+               <img src="static/images/nj2.jpg" alt="" />
+               <div class="text">
+                 <h3>绿色农居房</h3>
+                 <p>
+                   特点
+                 </p>
+                 <ol>
+                   <li>玻璃采用双层中空玻璃，外墙用保温涂料</li>
+                   <li>冬暖夏凉，与室外温度始终相差5摄氏度</li>
+                   <li>安全舒适，绿色静谧</li>
+                 </ol>
+
+               </div>
+               <div class="price">
+                 ￥398
+               </div>
+               <button type="button" name="button" id="btn0" class="live-button">查看照片</button>
+            </div>
+            <div class="contsec">
+               <img src="static/images/zhufang.jpg" alt="" />
+               <div class="text">
+                 <h3>自然竹房</h3>
+                 <p>
+                   特点
+                 </p>
+                 <ol>
+                   <li>保温、隔音性能好</li>
+                   <li>空气中都是自然的味道</li>
+                   <li>适于居住，绿色静谧</li>
+                 </ol>
+
+               </div>
+               <div class="price">
+                 ￥298
+               </div>
+               <button type="button" name="button" id="btn1" class="live-button">查看照片</button>
+            </div>
+            <div class="contthird">
+              <img src="static/images/mao1.jpg" alt="" />
+              <div class="text">
+                <h3>茅庐穹顶房</h3>
+                <p>
+                  特点
+                </p>
+                <ol>
+                  <li>房间造型别致</li>
+                  <li>有茅草屋的装饰</li>
+                  <li>复古有趣</li>
+                </ol>
+
+              </div>
+              <div class="price">
+                ￥498
+              </div>
+              <button type="button" name="button" id="btn2" class="live-button">查看照片</button>
+            </div>
+    </div>
+
+</div>
+    <form class="user-formtable" action="form.html" method="post"  onsubmit="return checkAll()">
+        <h1>预约</h1>
+        <div class="tablerow">
+            <div class="tableline">
+                <label for="user-name">姓名：</label>
+            </div>
+            <div class="tableline">
+                <input type="text" name="user-name" value="" id="user-name" placeholder="请输入您的名字" onblur="checkname()">
+                <span id="linkman" class="explain"></span>
+            </div>
+        </div>
+        <div class="tablerow">
+            <div class="tableline">
+                <label for="user-phone">手机：</label>
+            </div>
+            <div class="tableline">
+                <input type="text" name="user-phone" onblur="checkphone()" value="" id="user-phone" placeholder="请输入您的手机号码">
+                <span id="linkphone" class="explain"></span>
+            </div>
+        </div>
+        <div class="tablerow">
+            <div class="tableline">
+                <label for="user-house">乡居名称：</label>
+            </div>
+            <div class="tableline">
+                <!-- <input type="text" name="user-house" value="" id="user-house"> -->
+                <select class="user-selhouses" name="user-house" id="user-house">
+                    <!-- 表示各个菜单单项 -->
+                    <option value="">请您的选择</option>
+                    <option value="">绿色农居房</option>
+                    <option value="">自然竹房</option>
+                    <option value="">茅庐穹顶房</option>
+                </select>
+            </div>
+        </div>
+        <div class="tablerow">
+            <div class="tableline">
+                <label for="user-rudate">入住时间：</label>
+            </div>
+            <div class="tableline">
+                <input type="date" name="user-rudate" value="" id="user-rudate" placeholder="请选择入住日期" onclick="WdatePicker()" onblur="checkgodate()">
+                <span id="godate" class="explain"></span>
+            </div>
+        </div>
+        <div class="tablerow">
+            <div class="tableline">
+                <label for="user-lidate" >离开时间：</label>
+            </div>
+            <div class="tableline">
+                <input type="date" name="user-lidate" value="" id="user-lidate" placeholder="请选择离开日期" onclick="WdatePicker()" onblur="checkdate()">
+                <span id="outdate" class="explain"></span>
+            </div>
+        </div>
+        <div class="tablerow">
+            <div class="tableline">
+                <label for="user-number">人数：</label>
+            </div>
+            <div class="tableline">
+                <input type="number" name="user-number" value="" id="user-number" onblur="checknum()" placeholder="请输入几人入住">
+                <span id="livenum" class="explain"></span>
+            </div>
+        </div>
+        <div class="tablerow">
+            <div class="tableline">
+                <label for="user-require">其他要求：</label>
+            </div>
+            <div class="tableline">
+                <input type="text" name="user-require" value="" id="user-require" placeholder="请输入您的具体要求">
+            </div>
+        </div>
+        <div class="tablerow button-yuyt">
+            <div class="tableline">
+
+            </div>
+            <div class="tableline">
+                <input type="submit" name="user-button" value="预约" id="user-button" onclick="return checkAll()">
+            </div>
+
+        </div>
+    </form>
+    <footer class="foot-footer">
+        <div class="foot-div">
+            <div class="foot-friendship">
+                <h4 class="foot-friend-h4">友情链接</h4>
+                <div class="foot-friends">
+                    <a href="http://www.ctrip.com/" class="foot-friend">携程旅行</a>
+                    <a href="http://www.tuniu.com/" class="foot-friend">途牛旅游</a>
+                    <a href="https://www.ly.com/" class="foot-friend">同程旅游</a>
+                    <a href="https://www.alitrip.com/" class="foot-friend">淘宝旅行</a>
+                    <a href="https://www.qunar.com/" class="foot-friend">去哪儿网</a>
+                    <a href="http://guide.qyer.com/" class="foot-friend">穷游锦囊</a>
+                    <a href="http://map.baidu.com/" class="foot-friend">百度地图</a>
+                    <a href="http://www.autonavi.com/" class="foot-friend">高德地图</a>
+                    <a href="#" class="foot-friend">关于我们</a>
+
+            </div>
+        </div>
+        <div class="foot-nav">
+            <a href="#">首页</a> ·
+            <a href="#">景点</a> ·
+            <a href="#">体验</a> ·
+            <a href="#">乡居</a> ·
+            <a href="#">故事</a> ·
+            <a href="#">登录/注册</a>
+
+        </div>
+        <div class="foot-down">
+            <p class="foot-p">Copyright © 2017尚书悠 版权归 our team 所有 </p>
+        </div>
+    </footer>
+      <script src="static/js/formtest.js"></script>
+
+
+      <script src="static/My97DatePicker/My97DatePicker/WdatePicker.js"></script>
+      <script src="static/js/jquery-1.12.1.min.js" type="text/javascript"></script>
+      <script src="static/js/bootstrap.js"></script>
+
+
+      <div id="showImage">
+          <div class="showImage0">
+             <a href="javascript:;" class="close0" >×</a>
+             <div class="bbb">
+               <div class="wrap" >
+                  <ul >
+                    <li><img src="static/images/nj2.jpg" alt="" /></li>
+                    <li><img src="static/images/nj3.jpg" alt="" /></li>
+                    <li><img src="static/images/nj4.jpg" alt="" /></li>
+                    <li><img src="static/images/nj6.jpg" alt="" /></li>
+                    <li><img src="static/images/nj7.jpg" alt="" /></li>
+                  </ul>
+               </div>
+               <div class="wrrap">
+                 <ul >
+                   <li class="action"><img src="static/images/nj2.jpg" alt="" /></li>
+                   <li><img src="static/images/nj3.jpg" alt="" /></li>
+                   <li><img src="static/images/nj4.jpg" alt="" /></li>
+                   <li><img src="static/images/nj6.jpg" alt="" /></li>
+                   <li><img src="static/images/nj7.jpg" alt="" /></li>
+                 </ul>
+               </div>
+             </div>
+             <div class="btn7">
+                <span class="prev">&lt</span>
+                <span class="next">&gt</span>
+             </div>
+          </div>
+          <div class="showImage1">
+             <a href="javascript:;" class="close1">×</a>
+             <div class="bbb">
+               <div class="wrap" >
+                  <ul >
+                    <li><img src="static/images/zf2.jpg" alt="" /></li>
+                    <li><img src="static/images/zf1.jpg" alt="" /></li>
+                    <li><img src="static/images/zf3.jpg" alt="" /></li>
+                    <li><img src="static/images/zf9.jpg" alt="" /></li>
+                    <li><img src="static/images/zf7.jpg" alt="" /></li>
+                  </ul>
+               </div>
+               <div class="wrrap">
+                 <ul >
+                   <li class="action"><img src="static/images/zf2.jpg" alt="" /></li>
+                   <li><img src="static/images/zf1.jpg" alt="" /></li>
+                   <li><img src="static/images/zf3.jpg" alt="" /></li>
+                   <li><img src="static/images/zf9.jpg" alt="" /></li>
+                   <li><img src="static/images/zf7.jpg" alt="" /></li>
+                 </ul>
+               </div>
+             </div>
+
+             <div class="btn8">
+                <span class="prev">&lt</span>
+                <span class="next">&gt</span>
+             </div>
+          </div>
+          <div class="showImage2">
+             <a href="javascript:;" class="close2">×</a>
+             <div class="bbb">
+               <div class="wrap" >
+                  <ul >
+                    <li><img src="static/images/mao2.jpg" alt="" /></li>
+                    <li><img src="static/images/mao3.jpg" alt="" /></li>
+                    <li><img src="static/images/mao4.jpg" alt="" /></li>
+                    <li><img src="static/images/mao5.jpg" alt="" /></li>
+                    <li><img src="static/images/mao6.jpg" alt="" /></li>
+                  </ul>
+               </div>
+               <div class="wrrap">
+                 <ul >
+                   <li class="action"><img src="static/images/mao2.jpg" alt="" /></li>
+                   <li><img src="static/images/mao3.jpg" alt="" /></li>
+                   <li><img src="static/images/mao4.jpg" alt="" /></li>
+                   <li><img src="static/images/mao5.jpg" alt="" /></li>
+                   <li><img src="static/images/mao6.jpg" alt="" /></li>
+                 </ul>
+               </div>
+             </div>
+
+             <div class="btn9">
+                <span class="prev">&lt</span>
+                <span class="next">&gt</span>
+             </div>
+          </div>
+      </div>
+      <!-- 开启与关闭功能 -->
+      <script type="text/javascript">
+          $("#btn0").click(function(){
+          $(".showImage0").css("display","block");
+          });
+          //隐藏遮罩层
+          $(".close0").click(function(){
+          $(".showImage0").css("display","none");
+          $("body").css("overflow","visible");
+        });
+
+
+        $("#btn1").click(function(){
+        $(".showImage1").css("display","block");
+        });
+        //隐藏遮罩层
+        $(".close1").click(function(){
+        $(".showImage1").css("display","none");
+        $("body").css("overflow","visible");
+      });
+
+
+      $("#btn2").click(function(){
+      $(".showImage2").css("display","block");
+      });
+      //隐藏遮罩层
+      $(".close2").click(function(){
+      $(".showImage2").css("display","none");
+      $("body").css("overflow","visible");
+    });
+    </script>
+    <script src="static/js/mask1.js"></script>
+    <script>
+        window.onscroll = function(e){
+            e.stopPropagation();
+
+            if(window.scrollY >= document.querySelector('div.nav-bao').offsetHeight){
+                document.querySelector('div.nav-bao').className = 'nav-bao nav-bao-scroll';
+            }else{
+                document.querySelector('div.nav-bao').className = 'nav-bao';
+            }
+        }
+   </script>
+  </body>
+</html>

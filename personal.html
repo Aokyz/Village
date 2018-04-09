@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <link rel="stylesheet" href="static/css/nav.css" media="screen" title="no title">
+    <link rel="stylesheet" href="static/css/necessary.css" media="screen" title="no title">
+    <link rel="stylesheet" href="static/css/personal.css" media="screen" title="no title">
+    <link rel="stylesheet" href="static/css/foot.css" media="screen" title="no title">
+    <style media="screen">
+    footer.foot-footer{
+      position: relative;
+      background: rgba(97, 144, 148, 0.23);
+      margin-top: -188px;
+      height: 188px;
+      clear: both;
+    }
+
+    </style>
+  </head>
+  <body>
+      <header class="nav-header">
+          <div class="nav-bao">
+              <nav class="nav-nav">
+                      <a href="#" class="nav-logo">
+                              <img src="./logo.png" alt="" class="nav-logo-img">
+                      </a>
+                      <div class="nav-div">
+                              <!-- <img src="static/images/menu.png" alt="" class="nav-div-img"> -->
+                              <div class="nav-div-img">
+                                      <span class="nav-div-img-b1">1</span>
+                                      <span class="nav-div-img-b2">1</span>
+                                      <span class="nav-div-img-b3">1</span>
+                              </div>
+                              <ul class="nav-ul">
+                                      <li class="nav-li nav-active">
+                                              <a href="index.html" class="nav-lia nav-lia-active">首页</a>
+                                      </li>
+                                      <li class="nav-li">
+                                              <a href="scenery1.html" class="nav-lia">景点</a>
+                                      </li>
+                                      <li class="nav-li">
+                                              <a href="activity.html" class="nav-lia">体验</a>
+                                      </li>
+                                      <li class="nav-li">
+                                              <a href="live.html" class="nav-lia">乡居</a>
+                                      </li>
+                                      <li class="nav-li">
+                                              <a href="story.html" class="nav-lia">故事</a>
+                                      </li>
+                                      <li class="nav-li">
+                                              <a href="login.html" class="nav-lia">登录/注册</a>
+                                      </li>
+                              </ul>
+                      </div>
+              </nav>
+          </div>
+
+      </header>
+    <div class="setting">
+        <div class="clearfix" id="page">
+            <div class="box-top">
+               <ul>
+                 <li class="clicked"><a href="#">个人资料设置</a></li>
+                 <li><a href="#">活动预约情况</a></li>
+                 <li><a href="#">民居预约情况</a></li>
+                 <li><a href="#">故事书写情况</a></li>
+               </ul>
+            </div>
+            <div class="box-texts">
+               <div class="box-text-first box-text">
+                 <form action="index.html" class="" method="post" name="login1" onsubmit="retrun checklogin()">
+                   <table>
+                     <tr>
+                       <td>
+                         <em class="must">*</em>
+                         用户名
+                       </td>
+                       <td><input type="text" name="username" value=""placeholder="请输入您的用户名" class="left login-top" onblur="checklogin()"></td>
+                       <td id="prompt1" style="color:red;">
+
+                       </td>
+                       <td style="display:none;" id="ifsubmit">
+
+                       </td>
+                     </tr>
+                     <tr>
+                       <td class="headphoto">
+                         头像
+                       </td>
+                       <td><img src="static/images/11.jpg" alt="" width="150px" height="130px" />
+                       <button class="change">更换头像</button></td>
+                     </tr>
+                     <tr>
+                         <td>
+                           性别
+                         </td>
+                         <td>
+                            <input type="radio" name="sex" value="" id="male"><label for="male">男</label>
+                            <input type="radio" name="sex" value="" id="female"><label for="female">女</label>
+                            <input type="radio" name="sex" value="" id="secret"><label for="secret">保密</label>
+                        </td>
+                     </tr>
+                     <tr>
+                       <td>
+                         个人介绍
+                       </td>
+                       <td>
+                         <textarea name="name" rows="8" cols="40"></textarea>
+                       </td>
+                     </tr>
+                   </table>
+                   <input type="submit" name="saves" id="save" onclick="return checklogin()">
+                 </form>
+               </div>
+               <div class="box-text-second box-text">
+                  <div class="huodong">
+                      <div class="item1">
+                          <span>预约的活动名称</span>
+                          <a href="#">订单详情</a>
+                          <a href="#">删除</a>
+                     </div>
+                     <div class="item1">
+                         <span>预约的活动名称</span>
+                         <a href="#">订单详情</a>
+                         <a href="#">删除</a>
+                    </div>
+                    <div class="item1">
+                        <span>预约的活动名称</span>
+                        <a href="#">订单详情</a>
+                        <a href="#">删除</a>
+                   </div>
+                   <div class="item1">
+                       <span>预约的活动名称</span>
+                       <a href="#">订单详情</a>
+                       <a href="#">删除</a>
+                  </div>
+                  </div>
+               </div>
+               <div class="box-text-third box-text">
+                 <div class="xiangju">
+                   <div class="item1">
+                       <span>预约的乡居名称</span>
+                       <a href="#">订单详情</a>
+                       <a href="#">删除</a>
+                  </div>
+                </div>
+               </div>
+               <div class="box-text-fourth box-text">
+                 <div class="storys">
+                   <div class="item1">
+                       <span>书写的故事</span>
+                       <a href="#">订单详情</a>
+                       <a href="#">删除</a>
+                  </div>
+                </div>
+               </div>
+            </div>
+       </div>
+    </div>
+    <footer class="foot-footer">
+        <div class="foot-div">
+            <div class="foot-friendship">
+                <h4 class="foot-friend-h4">友情链接</h4>
+                <div class="foot-friends">
+                    <a href="http://www.ctrip.com/" class="foot-friend">携程旅行</a>
+                    <a href="http://www.tuniu.com/" class="foot-friend">途牛旅游</a>
+                    <a href="https://www.ly.com/" class="foot-friend">同程旅游</a>
+                    <a href="https://www.alitrip.com/" class="foot-friend">淘宝旅行</a>
+                    <a href="https://www.qunar.com/" class="foot-friend">去哪儿网</a>
+                    <a href="http://guide.qyer.com/" class="foot-friend">穷游锦囊</a>
+                    <a href="http://map.baidu.com/" class="foot-friend">百度地图</a>
+                    <a href="http://www.autonavi.com/" class="foot-friend">高德地图</a>
+                    <a href="#" class="foot-friend">关于我们</a>
+
+            </div>
+        </div>
+        <div class="foot-nav">
+            <a href="index.html">首页</a> ·
+            <a href="scenery1.html">景点</a> ·
+            <a href="activity.html">体验</a> ·
+            <a href="live.html">乡居</a> ·
+            <a href="story.html">故事</a> ·
+            <a href="login.html">登录/注册</a>
+
+        </div>
+        <div class="foot-down">
+            <p class="foot-p">Copyright © 2017尚书悠 版权归 our team 所有 </p>
+        </div>
+    </footer>
+        <script src="static/js/jquery-1.12.1.min.js "></script>
+    <script src="static/js/personal.js"></script>
+    <script>
+        window.onscroll = function(e){
+            e.stopPropagation();
+
+            if(window.scrollY >= document.querySelector('div.nav-bao').offsetHeight){
+                document.querySelector('div.nav-bao').className = 'nav-bao nav-bao-scroll';
+            }else{
+                document.querySelector('div.nav-bao').className = 'nav-bao';
+            }
+        }
+    </script>
+
+
+
+  </body>
+</html>
